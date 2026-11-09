@@ -1,0 +1,45 @@
+name: esim_provisioning
+description: Production-grade eSIM (eUICC) profile provisioning, capability detection, and GSMA SGP.22 LPA activation parser for Flutter.
+version: 0.1.0
+repository: https://github.com/Bahadir10/esim_provisioning
+issue_tracker: https://github.com/Bahadir10/esim_provisioning/issues
+topics:
+  - esim
+  - telecom
+  - cellular
+  - sim
+  - provisioning
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.24.0"
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: EsimProvisioningPlugin
+      android:
+        package: dev.flutter.telecom.esim_provisioning
+        pluginClass: EsimProvisioningPlugin
+      windows:
+        pluginClass: EsimProvisioningPluginCApi
+      macos:
+        pluginClass: EsimProvisioningPlugin
+      web:
+        pluginClass: EsimProvisioningWeb
+        fileName: esim_provisioning_web.dart
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  meta: ^1.11.0
+  plugin_platform_interface: ^2.1.8
+  web: ">=0.5.1 <2.0.0"
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter

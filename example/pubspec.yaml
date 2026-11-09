@@ -1,0 +1,22 @@
+name: esim_provisioning_example
+description: Official pub.dev example app for esim_provisioning demonstrating eSIM capability querying and GSMA SGP.22 LPA profile activation.
+publish_to: none
+version: 0.1.0
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.24.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  esim_provisioning:
+    path: ../
+
+dev_dependencies:
+  flutter_lints: ^5.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
